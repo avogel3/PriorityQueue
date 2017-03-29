@@ -25,4 +25,10 @@ public class NodeTest {
         Node node = new Node("node_name", 10);
         assertEquals(node.getName(), "node_name");
     }
+
+    @Test
+    public void testToString() throws Exception {
+        Node node = new Node("node_name", 10);
+        assertEquals("10 node_name", node.toString());
+    }
 }

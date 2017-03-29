@@ -9,6 +9,16 @@ public class PriorityQueue {
         queue = new Node[255];
     }
 
+    public void insert(Node node) {
+        int lastPosition = queue.length - 1;
+        queue[lastPosition] = node;
+        while(!isMaxHeap()) {
 
+        }
+    }
+
+    public boolean isMaxHeap() {
+        return false;
+    }
 
 }
