@@ -45,5 +45,37 @@ public class PriorityQueueTest {
         assertEquals(queue.size(), 1);
     }
 
+    @Test
+    public void testExtractMaxPriority() {
+        PriorityQueue queue = new PriorityQueue();
+        queue.insert("Jonathan", 69);
+        queue.insert("Marian", 12);
+        queue.insert("Alex", 56);
+        queue.insert("Jay", 25);
 
+        assertEquals(queue.extractMaxPriority(), "Jonathan");
+
+        // Double Check the heap property
+        assertTrue(queue.isMinHeap(0));
+        assertEquals(queue.size(),3);
+        assertEquals(queue.toString(), "[Marian, Alex, Jay]");
+    }
+
+    @Test
+    public void testToString() throws Exception {
+        PriorityQueue queue = new PriorityQueue();
+        assertEquals(queue.toString(), "[]");
+
+        queue.insert("Matthew", 40);
+        assertEquals(queue.toString(),"[Matthew]");
+
+        queue.insert("Andrew", 12);
+        assertEquals(queue.toString(), "[Andrew, Matthew]");
+
+        queue.insert("Jonathan", 5);
+        assertEquals(queue.toString(), "[Jonathan, Matthew, Andrew]");
+
+        queue.insert("Marian", 34);
+        assertEquals(queue.toString(),"[Jonathan, Marian, Andrew, Matthew]");
+    }
 }

@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 /**
  * Priority Queue - Min Heap Backed Implentation
  * Created by avogel on 2/13/17.
@@ -55,7 +57,23 @@ public class PriorityQueue {
         }
     }
 
+    // O(log n)
+    // aka - remove(), pop()
+    public String extractMaxPriority() {
+
+    }
+
     public int size() {
         return nodesInserted;
     }
+
+    @Override
+    public String toString() {
+        String[] queuesNames = new String[nodesInserted];
+        for(int i = 0; i < nodesInserted; i++) {
+            queuesNames[i] = queue[i].getName();
+        }
+        return Arrays.toString(queuesNames);
+    }
+
 }
