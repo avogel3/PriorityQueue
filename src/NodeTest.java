@@ -10,25 +10,35 @@ public class NodeTest {
 
     @Test
     public void testNewNode() throws Exception {
-        Node node = new Node("node_name", 10);
-        assertNotEquals(node,null);
+        Node emptyNode = new Node();
+        assertEquals(emptyNode.getName(), "__empty__");
+        assertEquals(emptyNode.getPriority(), -1);
     }
 
     @Test
     public void testGetPriority() throws Exception {
-        Node node = new Node("node_name", 10);
-        assertEquals(node.getPriority(), 10);
+        Node node = new Node();
+        assertEquals(node.getPriority(), -1);
     }
 
     @Test
     public void testGetName() throws Exception {
-        Node node = new Node("node_name", 10);
-        assertEquals(node.getName(), "node_name");
+        Node node = new Node();
+        assertEquals(node.getName(), "__empty__");
     }
 
     @Test
-    public void testToString() throws Exception {
-        Node node = new Node("node_name", 10);
-        assertEquals("10 node_name", node.toString());
+    public void testSetName() throws Exception {
+        Node node = new Node();
+        node.setName("Andrew");
+        assertEquals(node.getName(), "Andrew");
     }
+
+    @Test
+    public void testSetPriority() throws Exception {
+        Node node = new Node();
+        node.setPriority(69);
+        assertEquals(node.getPriority(), 69);
+    }
+
 }

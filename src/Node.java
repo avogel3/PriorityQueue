@@ -5,9 +5,17 @@ public class Node {
     private int priority;
     private String name;
 
-    public Node(String name, int priority) {
-        this.name = name;
-        this.priority = priority;
+    public Node() {
+        this.name = "__empty__";
+        this.priority = -1;
+    }
+
+    public void setName(String newName) {
+        name = newName;
+    }
+
+    public void setPriority(int newPriority) {
+        priority = newPriority;
     }
 
     public int getPriority() {
@@ -17,7 +25,4 @@ public class Node {
     public String getName() {
         return name;
     }
-
-    @Override
-    public String toString() { return priority + " " + name; }
 }
