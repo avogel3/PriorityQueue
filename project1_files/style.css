@@ -1,0 +1,192 @@
+a:link    { color:#0000FF; text-decoration: none; }
+a:visited { color:#2200DD; text-decoration: none; }
+a:hover   { color:#AA0000; text-decoration: underline; }
+a:active  { color:#FF0000; text-decoration: underline; }
+
+@media screen {
+  body {
+    font-family: "Calibri", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 26px;
+    color: #444;
+    margin: 3em;
+  }
+  code {
+    font-family: "Consolas", "Courier New", monospace;
+    font-size: 15px;
+    color: #999;
+  }
+}
+
+@media print {
+  body {
+    font-family: "Calibri", "Arial", sans-serif;
+    font-size: 10pt;
+    line-height: 14pt;
+    color: #444;
+    margin: 3em;
+  }
+  code {
+    font-family: "Consolas", "Courier New", monospace;
+    font-size: 10pt;
+    color: #999;
+  }
+}
+
+body.full {
+  margin: 0px;
+}
+
+pre {
+  margin-left: 2em;
+  line-height: 20px;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+table {
+  font: inherit;
+}
+
+svg {
+  margin: 0em 1em;
+  vertical-align: top;
+}
+
+p.signature {
+  text-align: right;
+  font-style: italic;
+}
+
+/* Lists of items each with a picture and text */
+
+div.all {
+  margin: 3em;
+}
+
+div.item img {
+  float: right;
+  max-height: 20ex;
+  margin-left: 16px;
+  margin-bottom: 16px;
+  max-width: 50%;
+}
+
+div.item h2 {
+  font-size: 1.2em;
+  padding: 0px;
+  margin: 0px;
+}
+
+div.all hr {
+  display: block;
+  height: 1px;
+  border: 0px;
+  border-top: 1px solid #EEE;
+  margin: 16px auto;
+  padding: 0px;
+  clear: both;
+}
+
+/* Let the glamour shot grow a little larger */
+
+img#kooima {
+  max-height: 30ex;
+}
+
+/* Page header and navigation list */
+
+h1.header {
+  margin: 0;
+  padding: 0.5em;
+  background: radial-gradient(ellipse, #EEF 50%, #AAC);
+  background-attachment: fixed;
+}
+
+#nav {
+  text-align: center;
+  padding: 0;
+  border: 0;
+  margin: 0;
+  margin-bottom: 16px;
+  background: radial-gradient(ellipse, #EEF 50%, #AAC);
+  background-attachment: fixed;
+}
+
+#nav li {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: inline-block;
+}
+
+#nav li:not(:first-child) {
+  border-left: 2px solid #FFF;
+}
+
+#nav li:not(:last-child) {
+  border-right: 2px solid #FFF;
+}
+
+#nav h3 {
+  margin: 0px;
+  padding: 0.5em;
+}
+
+/* Calender table */
+
+table.calendar {
+  margin-left:  auto;
+  margin-right: auto;
+  page-break-inside: auto;
+}
+
+table.calendar tr {
+  page-break-inside: avoid;
+  page-break-after: auto;
+}
+
+table.calendar td {
+  border-color: white;
+  border-width: 2px;
+  border-style: solid;
+  vertical-align: top;
+}
+
+@media screen {
+  table.calendar td {
+    width:  7em;
+    height: 7em;
+  }
+}
+
+@media print {
+  table.calendar td {
+    width:       6em;
+    height:      6em;
+    font-size:   10pt;
+    line-height: 12pt;
+  }
+}
+
+td.lec {
+  background: #CFC;
+}
+
+td.fin {
+  background: #FFC;
+}
+
+td.hol {
+  color:      #FFF;
+  background: #FCC;
+}
+
+td.off {
+  color:      #FFF;
+  background: #DDD;
+}
