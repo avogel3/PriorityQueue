@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="69a6b137-b9e1-41cc-ae9f-5af41db00eff" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Prog1/PriorityQueue.class" afterPath="$PROJECT_DIR$/out/production/Prog1/PriorityQueue.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Prog1/PriorityQueueTest.class" afterPath="$PROJECT_DIR$/out/production/Prog1/PriorityQueueTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PriorityQueue.java" afterPath="$PROJECT_DIR$/src/PriorityQueue.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PriorityQueueTest.java" afterPath="$PROJECT_DIR$/src/PriorityQueueTest.java" />
     </list>
@@ -24,13 +27,15 @@
           <file leaf-file-name="PriorityQueue.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/PriorityQueue.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-84">
-                  <caret line="44" column="0" lean-forward="true" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+                <state relative-caret-position="157">
+                  <caret line="79" column="5" lean-forward="true" selection-start-line="79" selection-start-column="5" selection-end-line="79" selection-end-column="5" />
                   <folding>
-                    <element signature="e#818#819#0" expanded="true" />
-                    <element signature="e#852#853#0" expanded="true" />
-                    <element signature="e#2024#2025#0" expanded="true" />
-                    <element signature="e#2053#2054#0" expanded="true" />
+                    <element signature="method#PriorityQueue#0;class#PriorityQueue#0" expanded="false" />
+                    <element signature="method#push#0;class#PriorityQueue#0" expanded="false" />
+                    <element signature="method#isMinHeap#0;class#PriorityQueue#0" expanded="false" />
+                    <element signature="method#heapify#0;class#PriorityQueue#0" expanded="false" />
+                    <element signature="method#insert#0;class#PriorityQueue#0" expanded="false" />
+                    <element signature="method#deleteMin#0;class#PriorityQueue#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
@@ -39,18 +44,22 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="PriorityQueueTest.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/PriorityQueueTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="396">
-                  <caret line="77" column="52" lean-forward="false" selection-start-line="77" selection-start-column="52" selection-end-line="77" selection-end-column="52" />
+                <state relative-caret-position="77">
+                  <caret line="88" column="21" lean-forward="false" selection-start-line="88" selection-start-column="21" selection-end-line="88" selection-end-column="21" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="method#testSize#0;class#PriorityQueueTest#0" expanded="false" />
                     <element signature="method#testPush#0;class#PriorityQueueTest#0" expanded="false" />
                     <element signature="method#isEmpty#0;class#PriorityQueueTest#0" expanded="false" />
                     <element signature="method#testIsMinHeap#0;class#PriorityQueueTest#0" expanded="false" />
+                    <element signature="method#testInsert#0;class#PriorityQueueTest#0" expanded="false" />
+                    <element signature="method#testExtractMin#0;class#PriorityQueueTest#0" expanded="false" />
+                    <element signature="method#testDeleteMin#0;class#PriorityQueueTest#0" expanded="false" />
+                    <element signature="method#testToString#0;class#PriorityQueueTest#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
@@ -157,15 +166,15 @@
       <recent name="groovy.util.GroovyTestCase" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PriorityQueueTest.testInsert">
-    <configuration default="false" name="PriorityQueueTest.testIsMinHeap" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.PriorityQueueTest.testRemove">
+    <configuration default="false" name="PriorityQueueTest.testExtractMaxPriority" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="Prog1" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="PriorityQueueTest" />
-      <option name="METHOD_NAME" value="testIsMinHeap" />
+      <option name="METHOD_NAME" value="testExtractMaxPriority" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -179,14 +188,14 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="PriorityQueueTest.testPush" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="PriorityQueueTest.deleteMin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="Prog1" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="PriorityQueueTest" />
-      <option name="METHOD_NAME" value="testPush" />
+      <option name="METHOD_NAME" value="deleteMin" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -200,14 +209,14 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="PriorityQueueTest.testSize" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="PriorityQueueTest.testExtractMinPriority" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="Prog1" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="PriorityQueueTest" />
-      <option name="METHOD_NAME" value="testSize" />
+      <option name="METHOD_NAME" value="testExtractMinPriority" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -221,14 +230,14 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="PriorityQueueTest.isEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="PriorityQueueTest.testExtractMin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="Prog1" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="PriorityQueueTest" />
-      <option name="METHOD_NAME" value="isEmpty" />
+      <option name="METHOD_NAME" value="testExtractMin" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -242,14 +251,14 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="PriorityQueueTest.testInsert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="PriorityQueueTest.testRemove" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="Prog1" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="PriorityQueueTest" />
-      <option name="METHOD_NAME" value="testInsert" />
+      <option name="METHOD_NAME" value="testRemove" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -513,19 +522,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.PriorityQueueTest.testIsMinHeap" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.PriorityQueueTest.testPush" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.PriorityQueueTest.testSize" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.PriorityQueueTest.isEmpty" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.PriorityQueueTest.testInsert" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.PriorityQueueTest.testExtractMaxPriority" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.PriorityQueueTest.deleteMin" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.PriorityQueueTest.testExtractMinPriority" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.PriorityQueueTest.testExtractMin" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.PriorityQueueTest.testRemove" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.PriorityQueueTest.testInsert" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.PriorityQueueTest.testIsMinHeap" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.PriorityQueueTest.testPush" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.PriorityQueueTest.isEmpty" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.PriorityQueueTest.testSize" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.PriorityQueueTest.testRemove" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.PriorityQueueTest.deleteMin" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.PriorityQueueTest.testExtractMin" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.PriorityQueueTest.testExtractMinPriority" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.PriorityQueueTest.testExtractMaxPriority" />
       </list>
     </recent_temporary>
   </component>
@@ -548,35 +557,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="PriorityQueueTest_testInsert - 2017.04.02 at 15h 26m 30s.xml">
-      <configuration name="PriorityQueueTest.testInsert" configurationId="JUnit" />
+    <history-entry file="PriorityQueueTest_deleteMin - 2017.04.02 at 15h 53m 00s.xml">
+      <configuration name="PriorityQueueTest.deleteMin" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PriorityQueueTest_testInsert - 2017.04.02 at 15h 35m 17s.xml">
-      <configuration name="PriorityQueueTest.testInsert" configurationId="JUnit" />
+    <history-entry file="PriorityQueueTest_deleteMin - 2017.04.02 at 16h 00m 02s.xml">
+      <configuration name="PriorityQueueTest.deleteMin" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PriorityQueueTest_testInsert - 2017.04.02 at 15h 35m 46s.xml">
-      <configuration name="PriorityQueueTest.testInsert" configurationId="JUnit" />
+    <history-entry file="PriorityQueueTest_testExtractMaxPriority - 2017.04.02 at 15h 42m 22s.xml">
+      <configuration name="PriorityQueueTest.testExtractMaxPriority" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PriorityQueueTest_testIsMinHeap - 2017.04.02 at 15h 20m 21s.xml">
-      <configuration name="PriorityQueueTest.testIsMinHeap" configurationId="JUnit" />
+    <history-entry file="PriorityQueueTest_testExtractMin - 2017.04.02 at 15h 58m 23s.xml">
+      <configuration name="PriorityQueueTest.testExtractMin" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PriorityQueueTest_testIsMinHeap - 2017.04.02 at 15h 22m 16s.xml">
-      <configuration name="PriorityQueueTest.testIsMinHeap" configurationId="JUnit" />
+    <history-entry file="PriorityQueueTest_testExtractMinPriority - 2017.04.02 at 15h 52m 56s.xml">
+      <configuration name="PriorityQueueTest.testExtractMinPriority" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PriorityQueueTest_testIsMinHeap - 2017.04.02 at 15h 30m 19s.xml">
-      <configuration name="PriorityQueueTest.testIsMinHeap" configurationId="JUnit" />
+    <history-entry file="PriorityQueueTest_testRemove - 2017.04.02 at 16h 18m 52s.xml">
+      <configuration name="PriorityQueueTest.testRemove" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PriorityQueueTest_testIsMinHeap - 2017.04.02 at 15h 32m 26s.xml">
-      <configuration name="PriorityQueueTest.testIsMinHeap" configurationId="JUnit" />
+    <history-entry file="PriorityQueueTest_testRemove - 2017.04.02 at 16h 39m 14s.xml">
+      <configuration name="PriorityQueueTest.testRemove" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PriorityQueueTest_testIsMinHeap - 2017.04.02 at 15h 32m 47s.xml">
-      <configuration name="PriorityQueueTest.testIsMinHeap" configurationId="JUnit" />
+    <history-entry file="PriorityQueueTest_testRemove - 2017.04.02 at 16h 40m 28s.xml">
+      <configuration name="PriorityQueueTest.testRemove" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PriorityQueueTest_testIsMinHeap - 2017.04.02 at 15h 33m 41s.xml">
-      <configuration name="PriorityQueueTest.testIsMinHeap" configurationId="JUnit" />
+    <history-entry file="PriorityQueueTest_testRemove - 2017.04.02 at 16h 41m 11s.xml">
+      <configuration name="PriorityQueueTest.testRemove" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PriorityQueueTest_testPush - 2017.04.02 at 15h 29m 56s.xml">
-      <configuration name="PriorityQueueTest.testPush" configurationId="JUnit" />
+    <history-entry file="PriorityQueueTest_testRemove - 2017.04.02 at 16h 50m 14s.xml">
+      <configuration name="PriorityQueueTest.testRemove" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -590,21 +599,20 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="774" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991204" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3240469" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2771261" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2771261" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28739002" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28739002" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18901454" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -618,6 +626,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3240469" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32866043" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -641,10 +650,12 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#818#819#0" expanded="true" />
-            <element signature="e#852#853#0" expanded="true" />
-            <element signature="e#2024#2025#0" expanded="true" />
-            <element signature="e#2053#2054#0" expanded="true" />
+            <element signature="method#PriorityQueue#0;class#PriorityQueue#0" expanded="false" />
+            <element signature="method#push#0;class#PriorityQueue#0" expanded="false" />
+            <element signature="method#isMinHeap#0;class#PriorityQueue#0" expanded="false" />
+            <element signature="method#heapify#0;class#PriorityQueue#0" expanded="false" />
+            <element signature="method#insert#0;class#PriorityQueue#0" expanded="false" />
+            <element signature="method#deleteMin#0;class#PriorityQueue#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -659,6 +670,10 @@
             <element signature="method#testPush#0;class#PriorityQueueTest#0" expanded="false" />
             <element signature="method#isEmpty#0;class#PriorityQueueTest#0" expanded="false" />
             <element signature="method#testIsMinHeap#0;class#PriorityQueueTest#0" expanded="false" />
+            <element signature="method#testInsert#0;class#PriorityQueueTest#0" expanded="false" />
+            <element signature="method#testExtractMin#0;class#PriorityQueueTest#0" expanded="false" />
+            <element signature="method#testDeleteMin#0;class#PriorityQueueTest#0" expanded="false" />
+            <element signature="method#testToString#0;class#PriorityQueueTest#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -668,10 +683,12 @@
         <state relative-caret-position="15">
           <caret line="1" column="48" lean-forward="false" selection-start-line="1" selection-start-column="48" selection-end-line="1" selection-end-column="48" />
           <folding>
-            <element signature="e#818#819#0" expanded="true" />
-            <element signature="e#852#853#0" expanded="true" />
-            <element signature="e#2024#2025#0" expanded="true" />
-            <element signature="e#2053#2054#0" expanded="true" />
+            <element signature="method#PriorityQueue#0;class#PriorityQueue#0" expanded="false" />
+            <element signature="method#push#0;class#PriorityQueue#0" expanded="false" />
+            <element signature="method#isMinHeap#0;class#PriorityQueue#0" expanded="false" />
+            <element signature="method#heapify#0;class#PriorityQueue#0" expanded="false" />
+            <element signature="method#insert#0;class#PriorityQueue#0" expanded="false" />
+            <element signature="method#deleteMin#0;class#PriorityQueue#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -686,6 +703,10 @@
             <element signature="method#testPush#0;class#PriorityQueueTest#0" expanded="false" />
             <element signature="method#isEmpty#0;class#PriorityQueueTest#0" expanded="false" />
             <element signature="method#testIsMinHeap#0;class#PriorityQueueTest#0" expanded="false" />
+            <element signature="method#testInsert#0;class#PriorityQueueTest#0" expanded="false" />
+            <element signature="method#testExtractMin#0;class#PriorityQueueTest#0" expanded="false" />
+            <element signature="method#testDeleteMin#0;class#PriorityQueueTest#0" expanded="false" />
+            <element signature="method#testToString#0;class#PriorityQueueTest#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -713,10 +734,12 @@
         <state relative-caret-position="375">
           <caret line="25" column="20" lean-forward="true" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
           <folding>
-            <element signature="e#818#819#0" expanded="true" />
-            <element signature="e#852#853#0" expanded="true" />
-            <element signature="e#2024#2025#0" expanded="true" />
-            <element signature="e#2053#2054#0" expanded="true" />
+            <element signature="method#PriorityQueue#0;class#PriorityQueue#0" expanded="false" />
+            <element signature="method#push#0;class#PriorityQueue#0" expanded="false" />
+            <element signature="method#isMinHeap#0;class#PriorityQueue#0" expanded="false" />
+            <element signature="method#heapify#0;class#PriorityQueue#0" expanded="false" />
+            <element signature="method#insert#0;class#PriorityQueue#0" expanded="false" />
+            <element signature="method#deleteMin#0;class#PriorityQueue#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -731,6 +754,10 @@
             <element signature="method#testPush#0;class#PriorityQueueTest#0" expanded="false" />
             <element signature="method#isEmpty#0;class#PriorityQueueTest#0" expanded="false" />
             <element signature="method#testIsMinHeap#0;class#PriorityQueueTest#0" expanded="false" />
+            <element signature="method#testInsert#0;class#PriorityQueueTest#0" expanded="false" />
+            <element signature="method#testExtractMin#0;class#PriorityQueueTest#0" expanded="false" />
+            <element signature="method#testDeleteMin#0;class#PriorityQueueTest#0" expanded="false" />
+            <element signature="method#testToString#0;class#PriorityQueueTest#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -758,10 +785,12 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#818#819#0" expanded="true" />
-            <element signature="e#852#853#0" expanded="true" />
-            <element signature="e#2024#2025#0" expanded="true" />
-            <element signature="e#2053#2054#0" expanded="true" />
+            <element signature="method#PriorityQueue#0;class#PriorityQueue#0" expanded="false" />
+            <element signature="method#push#0;class#PriorityQueue#0" expanded="false" />
+            <element signature="method#isMinHeap#0;class#PriorityQueue#0" expanded="false" />
+            <element signature="method#heapify#0;class#PriorityQueue#0" expanded="false" />
+            <element signature="method#insert#0;class#PriorityQueue#0" expanded="false" />
+            <element signature="method#deleteMin#0;class#PriorityQueue#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -771,10 +800,12 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#818#819#0" expanded="true" />
-            <element signature="e#852#853#0" expanded="true" />
-            <element signature="e#2024#2025#0" expanded="true" />
-            <element signature="e#2053#2054#0" expanded="true" />
+            <element signature="method#PriorityQueue#0;class#PriorityQueue#0" expanded="false" />
+            <element signature="method#push#0;class#PriorityQueue#0" expanded="false" />
+            <element signature="method#isMinHeap#0;class#PriorityQueue#0" expanded="false" />
+            <element signature="method#heapify#0;class#PriorityQueue#0" expanded="false" />
+            <element signature="method#insert#0;class#PriorityQueue#0" expanded="false" />
+            <element signature="method#deleteMin#0;class#PriorityQueue#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -791,10 +822,12 @@
         <state relative-caret-position="466">
           <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding>
-            <element signature="e#818#819#0" expanded="true" />
-            <element signature="e#852#853#0" expanded="true" />
-            <element signature="e#2024#2025#0" expanded="true" />
-            <element signature="e#2053#2054#0" expanded="true" />
+            <element signature="method#PriorityQueue#0;class#PriorityQueue#0" expanded="false" />
+            <element signature="method#push#0;class#PriorityQueue#0" expanded="false" />
+            <element signature="method#isMinHeap#0;class#PriorityQueue#0" expanded="false" />
+            <element signature="method#heapify#0;class#PriorityQueue#0" expanded="false" />
+            <element signature="method#insert#0;class#PriorityQueue#0" expanded="false" />
+            <element signature="method#deleteMin#0;class#PriorityQueue#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -809,6 +842,10 @@
             <element signature="method#testPush#0;class#PriorityQueueTest#0" expanded="false" />
             <element signature="method#isEmpty#0;class#PriorityQueueTest#0" expanded="false" />
             <element signature="method#testIsMinHeap#0;class#PriorityQueueTest#0" expanded="false" />
+            <element signature="method#testInsert#0;class#PriorityQueueTest#0" expanded="false" />
+            <element signature="method#testExtractMin#0;class#PriorityQueueTest#0" expanded="false" />
+            <element signature="method#testDeleteMin#0;class#PriorityQueueTest#0" expanded="false" />
+            <element signature="method#testToString#0;class#PriorityQueueTest#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -818,10 +855,12 @@
         <state relative-caret-position="885">
           <caret line="59" column="22" lean-forward="false" selection-start-line="59" selection-start-column="22" selection-end-line="59" selection-end-column="22" />
           <folding>
-            <element signature="e#818#819#0" expanded="true" />
-            <element signature="e#852#853#0" expanded="true" />
-            <element signature="e#2024#2025#0" expanded="true" />
-            <element signature="e#2053#2054#0" expanded="true" />
+            <element signature="method#PriorityQueue#0;class#PriorityQueue#0" expanded="false" />
+            <element signature="method#push#0;class#PriorityQueue#0" expanded="false" />
+            <element signature="method#isMinHeap#0;class#PriorityQueue#0" expanded="false" />
+            <element signature="method#heapify#0;class#PriorityQueue#0" expanded="false" />
+            <element signature="method#insert#0;class#PriorityQueue#0" expanded="false" />
+            <element signature="method#deleteMin#0;class#PriorityQueue#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -836,6 +875,10 @@
             <element signature="method#testPush#0;class#PriorityQueueTest#0" expanded="false" />
             <element signature="method#isEmpty#0;class#PriorityQueueTest#0" expanded="false" />
             <element signature="method#testIsMinHeap#0;class#PriorityQueueTest#0" expanded="false" />
+            <element signature="method#testInsert#0;class#PriorityQueueTest#0" expanded="false" />
+            <element signature="method#testExtractMin#0;class#PriorityQueueTest#0" expanded="false" />
+            <element signature="method#testDeleteMin#0;class#PriorityQueueTest#0" expanded="false" />
+            <element signature="method#testToString#0;class#PriorityQueueTest#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -845,10 +888,12 @@
         <state relative-caret-position="885">
           <caret line="59" column="22" lean-forward="false" selection-start-line="59" selection-start-column="22" selection-end-line="59" selection-end-column="22" />
           <folding>
-            <element signature="e#818#819#0" expanded="true" />
-            <element signature="e#852#853#0" expanded="true" />
-            <element signature="e#2024#2025#0" expanded="true" />
-            <element signature="e#2053#2054#0" expanded="true" />
+            <element signature="method#PriorityQueue#0;class#PriorityQueue#0" expanded="false" />
+            <element signature="method#push#0;class#PriorityQueue#0" expanded="false" />
+            <element signature="method#isMinHeap#0;class#PriorityQueue#0" expanded="false" />
+            <element signature="method#heapify#0;class#PriorityQueue#0" expanded="false" />
+            <element signature="method#insert#0;class#PriorityQueue#0" expanded="false" />
+            <element signature="method#deleteMin#0;class#PriorityQueue#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -863,6 +908,10 @@
             <element signature="method#testPush#0;class#PriorityQueueTest#0" expanded="false" />
             <element signature="method#isEmpty#0;class#PriorityQueueTest#0" expanded="false" />
             <element signature="method#testIsMinHeap#0;class#PriorityQueueTest#0" expanded="false" />
+            <element signature="method#testInsert#0;class#PriorityQueueTest#0" expanded="false" />
+            <element signature="method#testExtractMin#0;class#PriorityQueueTest#0" expanded="false" />
+            <element signature="method#testDeleteMin#0;class#PriorityQueueTest#0" expanded="false" />
+            <element signature="method#testToString#0;class#PriorityQueueTest#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -886,10 +935,12 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#818#819#0" expanded="true" />
-            <element signature="e#852#853#0" expanded="true" />
-            <element signature="e#2024#2025#0" expanded="true" />
-            <element signature="e#2053#2054#0" expanded="true" />
+            <element signature="method#PriorityQueue#0;class#PriorityQueue#0" expanded="false" />
+            <element signature="method#push#0;class#PriorityQueue#0" expanded="false" />
+            <element signature="method#isMinHeap#0;class#PriorityQueue#0" expanded="false" />
+            <element signature="method#heapify#0;class#PriorityQueue#0" expanded="false" />
+            <element signature="method#insert#0;class#PriorityQueue#0" expanded="false" />
+            <element signature="method#deleteMin#0;class#PriorityQueue#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -906,10 +957,12 @@
         <state relative-caret-position="555">
           <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
           <folding>
-            <element signature="e#818#819#0" expanded="true" />
-            <element signature="e#852#853#0" expanded="true" />
-            <element signature="e#2024#2025#0" expanded="true" />
-            <element signature="e#2053#2054#0" expanded="true" />
+            <element signature="method#PriorityQueue#0;class#PriorityQueue#0" expanded="false" />
+            <element signature="method#push#0;class#PriorityQueue#0" expanded="false" />
+            <element signature="method#isMinHeap#0;class#PriorityQueue#0" expanded="false" />
+            <element signature="method#heapify#0;class#PriorityQueue#0" expanded="false" />
+            <element signature="method#insert#0;class#PriorityQueue#0" expanded="false" />
+            <element signature="method#deleteMin#0;class#PriorityQueue#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -926,10 +979,12 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#818#819#0" expanded="true" />
-            <element signature="e#852#853#0" expanded="true" />
-            <element signature="e#2024#2025#0" expanded="true" />
-            <element signature="e#2053#2054#0" expanded="true" />
+            <element signature="method#PriorityQueue#0;class#PriorityQueue#0" expanded="false" />
+            <element signature="method#push#0;class#PriorityQueue#0" expanded="false" />
+            <element signature="method#isMinHeap#0;class#PriorityQueue#0" expanded="false" />
+            <element signature="method#heapify#0;class#PriorityQueue#0" expanded="false" />
+            <element signature="method#insert#0;class#PriorityQueue#0" expanded="false" />
+            <element signature="method#deleteMin#0;class#PriorityQueue#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -953,10 +1008,12 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#818#819#0" expanded="true" />
-            <element signature="e#852#853#0" expanded="true" />
-            <element signature="e#2024#2025#0" expanded="true" />
-            <element signature="e#2053#2054#0" expanded="true" />
+            <element signature="method#PriorityQueue#0;class#PriorityQueue#0" expanded="false" />
+            <element signature="method#push#0;class#PriorityQueue#0" expanded="false" />
+            <element signature="method#isMinHeap#0;class#PriorityQueue#0" expanded="false" />
+            <element signature="method#heapify#0;class#PriorityQueue#0" expanded="false" />
+            <element signature="method#insert#0;class#PriorityQueue#0" expanded="false" />
+            <element signature="method#deleteMin#0;class#PriorityQueue#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -980,10 +1037,12 @@
         <state relative-caret-position="255">
           <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding>
-            <element signature="e#818#819#0" expanded="true" />
-            <element signature="e#852#853#0" expanded="true" />
-            <element signature="e#2024#2025#0" expanded="true" />
-            <element signature="e#2053#2054#0" expanded="true" />
+            <element signature="method#PriorityQueue#0;class#PriorityQueue#0" expanded="false" />
+            <element signature="method#push#0;class#PriorityQueue#0" expanded="false" />
+            <element signature="method#isMinHeap#0;class#PriorityQueue#0" expanded="false" />
+            <element signature="method#heapify#0;class#PriorityQueue#0" expanded="false" />
+            <element signature="method#insert#0;class#PriorityQueue#0" expanded="false" />
+            <element signature="method#deleteMin#0;class#PriorityQueue#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1047,27 +1106,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/PriorityQueue.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-84">
-          <caret line="44" column="0" lean-forward="true" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+        <state relative-caret-position="157">
+          <caret line="79" column="5" lean-forward="true" selection-start-line="79" selection-start-column="5" selection-end-line="79" selection-end-column="5" />
           <folding>
-            <element signature="e#818#819#0" expanded="true" />
-            <element signature="e#852#853#0" expanded="true" />
-            <element signature="e#2024#2025#0" expanded="true" />
-            <element signature="e#2053#2054#0" expanded="true" />
+            <element signature="method#PriorityQueue#0;class#PriorityQueue#0" expanded="false" />
+            <element signature="method#push#0;class#PriorityQueue#0" expanded="false" />
+            <element signature="method#isMinHeap#0;class#PriorityQueue#0" expanded="false" />
+            <element signature="method#heapify#0;class#PriorityQueue#0" expanded="false" />
+            <element signature="method#insert#0;class#PriorityQueue#0" expanded="false" />
+            <element signature="method#deleteMin#0;class#PriorityQueue#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/PriorityQueueTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="77" column="52" lean-forward="false" selection-start-line="77" selection-start-column="52" selection-end-line="77" selection-end-column="52" />
+        <state relative-caret-position="77">
+          <caret line="88" column="21" lean-forward="false" selection-start-line="88" selection-start-column="21" selection-end-line="88" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#testSize#0;class#PriorityQueueTest#0" expanded="false" />
             <element signature="method#testPush#0;class#PriorityQueueTest#0" expanded="false" />
             <element signature="method#isEmpty#0;class#PriorityQueueTest#0" expanded="false" />
             <element signature="method#testIsMinHeap#0;class#PriorityQueueTest#0" expanded="false" />
+            <element signature="method#testInsert#0;class#PriorityQueueTest#0" expanded="false" />
+            <element signature="method#testExtractMin#0;class#PriorityQueueTest#0" expanded="false" />
+            <element signature="method#testDeleteMin#0;class#PriorityQueueTest#0" expanded="false" />
+            <element signature="method#testToString#0;class#PriorityQueueTest#0" expanded="false" />
           </folding>
         </state>
       </provider>

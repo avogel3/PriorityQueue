@@ -36,7 +36,6 @@ public class PriorityQueueTest {
         assertFalse(queue.isEmpty());
     }
 
-
     @Test
     public void testIsMinHeap() throws Exception {
         PriorityQueue queue = new PriorityQueue();
@@ -52,7 +51,6 @@ public class PriorityQueueTest {
         queue.push("Julia", 10);
         assertFalse(queue.isMinHeap(queue.size() - 1));
     }
-
 
     @Test
     public void testInsert() throws Exception {
@@ -80,20 +78,35 @@ public class PriorityQueueTest {
     }
 
     @Test
-    public void testExtractMaxPriority() {
+    public void testExtractMin() {
+        PriorityQueue queue = new PriorityQueue();
+        queue.insert("Matthew", 13);
+        queue.insert("Hermine", 8);
+        assertEquals("Hermine", queue.extractMin().getName());
+    }
+
+    @Test
+    public void testDeleteMin() {
+        PriorityQueue queue = new PriorityQueue();
+        queue.insert("Matthew", 13);
+        queue.insert("Hermine", 8);
+        queue.deleteMin();
+        assertEquals(1, queue.size());
+        assertEquals("[Matthew]", queue.toString());
+    }
+
+    @Test
+    public void testRemove() {
         PriorityQueue queue = new PriorityQueue();
 
-        queue.insert("Jonathan", 69);
-        queue.insert("Marian", 12);
-        queue.insert("Alex", 56);
-        queue.insert("Jay", 25);
+        queue.insert("Michael", 18);
+        queue.insert("Hermine", 8);
+        queue.insert("Lisa", 12);
+        queue.insert("Julia", 10);
 
-        assertEquals(queue.extractMaxPriority(), "Jonathan");
-
-        // Double Check the heap property
-        assertTrue(queue.isMinHeap(0));
-        assertEquals(queue.size(),3);
-        assertEquals(queue.toString(), "[Marian, Alex, Jay]");
+        assertEquals("Hermine", queue.remove());
+        assertTrue(queue.isMinHeap(queue.size() - 1));
+        assertEquals("[Julia, Michael, Lisa]", queue.toString());
     }
 
     @Test
@@ -102,16 +115,16 @@ public class PriorityQueueTest {
 
         assertEquals(queue.toString(), "[]");
 
-        queue.insert("Matthew", 40);
+        queue.insert("Matthew", 13);
         assertEquals(queue.toString(),"[Matthew]");
 
-        queue.insert("Andrew", 12);
-        assertEquals(queue.toString(), "[Andrew, Matthew]");
+        queue.insert("Hermine", 8);
+        assertEquals(queue.toString(), "[Hermine, Matthew]");
 
-        queue.insert("Jonathan", 5);
-        assertEquals(queue.toString(), "[Jonathan, Matthew, Andrew]");
+        queue.insert("Lisa", 12);
+        assertEquals(queue.toString(), "[Hermine, Matthew, Lisa]");
 
-        queue.insert("Marian", 34);
-        assertEquals(queue.toString(),"[Jonathan, Marian, Andrew, Matthew]");
+        queue.insert("Julia", 10);
+        assertEquals(queue.toString(),"[Hermine, Julia, Lisa, Matthew]");
     }
 }

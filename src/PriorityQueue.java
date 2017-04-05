@@ -22,7 +22,6 @@ public class PriorityQueue {
         return nodesInserted;
     }
 
-
     public void push(String name, int priority) {
         nodesInserted += 1;
         int lastPosition = nodesInserted - 1;
@@ -30,9 +29,7 @@ public class PriorityQueue {
         queue[lastPosition].setPriority(priority);
     }
 
-    public boolean isEmpty() {
-        return size() == 0;
-    }
+    public boolean isEmpty() { return size() == 0; }
 
     public boolean isMinHeap(int fromPosition) {
         if(isEmpty()) {
@@ -47,8 +44,6 @@ public class PriorityQueue {
         int parentPosition = (fromPosition - 1) / 2;
         Node parent = queue[parentPosition];
         return (child.getPriority() > parent.getPriority() && isMinHeap(fromPosition - 1));
-
-
     }
 
     public void heapify() {
@@ -75,10 +70,21 @@ public class PriorityQueue {
         heapify();
     }
 
-    // O(log n)
-    // aka - remove(), pop()
-    public String extractMaxPriority() {
-        return "fuck";
+    public Node extractMin() { return queue[0]; }
+
+    public void deleteMin() {
+        int lastPosition = size() - 1;
+        queue[0] = queue[lastPosition];
+        queue[lastPosition] = new Node(); // clear out last position
+        nodesInserted -= 1;
+    }
+
+    public String remove() {
+        Node min = extractMin();
+        deleteMin();
+
+        heapify();
+        return min.getName();
     }
 
     @Override
