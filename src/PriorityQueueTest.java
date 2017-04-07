@@ -97,6 +97,4 @@ public class PriorityQueueTest {
         queue.insert("Julia", 10);
         assertEquals(queue.toString(),"[Hermine, Julia, Lisa, Matthew]");
     }
-
-
 }
