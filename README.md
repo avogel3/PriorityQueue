@@ -1,11 +1,11 @@
 ## Priority Queue
 ###### A min heap backed Priority Queue implemented in Java.
 
-### Instructions
+### Java Instructions
 
 **Compile**  
 ```
-cd src && javac PQReader.java
+cd java && javac PQReader.java
 ```
 
 **Run**    
