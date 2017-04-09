@@ -15,6 +15,10 @@ class PriorityQueue
     @size += 1
     sift_up(0)
   end
+  
+  def empty?
+    @size < 1
+  end
 
   private 
   def sift_up(end_position)

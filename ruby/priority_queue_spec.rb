@@ -7,12 +7,12 @@ RSpec.describe PriorityQueue do
   it { should respond_to(:size) }
 
 
+  before :each do
+    @queue = PriorityQueue.new
+    @queue.insert("Walter", 21)
+  end
+  
   describe "#insert" do
-    before :each do
-      @queue = PriorityQueue.new
-      @queue.insert("Walter", 21)
-    end
-
     it "increments the size of the queue" do
       expect(@queue.size).to eq 1
     end
@@ -30,6 +30,12 @@ RSpec.describe PriorityQueue do
       backing_array = @queue.queue
       min_node = backing_array.first
       expect(min_node.priority).to eq 8
+    end
+  end
+
+  describe "#empty?" do
+    it "returns truthy if contents are in queue" do
+      expect(@queue.empty?).to eq false
     end
   end
 end
