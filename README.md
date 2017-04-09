@@ -12,3 +12,8 @@ cd java && javac PQReader.java
 ```
 java PQReader input.txt
 ```
+
+
+### Ruby Instructions
+
+* WIP
