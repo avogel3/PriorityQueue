@@ -1,4 +1,4 @@
-require_relative 'node'
+require 'node'
 
 RSpec.describe Node do
     it { should respond_to(:name) }

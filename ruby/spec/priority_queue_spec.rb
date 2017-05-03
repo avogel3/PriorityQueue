@@ -1,5 +1,5 @@
-require_relative 'priority_queue'
-require_relative 'node'
+require 'priority_queue'
+require 'node'
 require 'pry'
 
 RSpec.describe PriorityQueue do
@@ -36,6 +36,20 @@ RSpec.describe PriorityQueue do
   describe "#empty?" do
     it "returns truthy if contents are in queue" do
       expect(@queue.empty?).to eq false
+    end
+  end
+
+  describe "#remove" do 
+    it "returns the name of the minimum value from the queue." do
+      @queue.insert("Matthew", 18)
+      expect(@queue.remove).to eq "Matthew"
+    end
+
+
+    it "removes the value from the queue" do
+      @queue.insert("Matthew", 18)
+      @queue.remove
+      expect(@queue.size).to eq 1
     end
   end
 end
