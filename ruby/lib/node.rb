@@ -1,7 +1,7 @@
 class Node
   attr_accessor :name, :priority
 
-  def initialize name="__empty__", priority=-1
+  def initialize name, priority
     @name = name
     @priority = priority
   end

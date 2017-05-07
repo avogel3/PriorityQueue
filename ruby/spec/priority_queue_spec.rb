@@ -4,12 +4,22 @@ require 'pry'
 
 RSpec.describe PriorityQueue do
   it { should respond_to(:queue) }
-  it { should respond_to(:size) }
-
 
   before :each do
     @queue = PriorityQueue.new
     @queue.insert("Walter", 21)
+  end
+
+  describe "#empty?" do
+    it "returns truthy if contents are in queue" do
+      expect(@queue.empty?).to eq false
+    end
+  end
+
+  describe "#size" do
+    it "should return the size of the backing array" do
+      expect(@queue.size).to eq 1
+    end
   end
 
   describe "#insert" do
@@ -24,7 +34,7 @@ RSpec.describe PriorityQueue do
       expect(inserted_node.priority).to eq 21
     end
 
-    xit "maintains the min heap property" do
+    it "maintains the min heap property" do
       @queue.insert("Matthew", 13)
       @queue.insert("Hermine", 8)
       backing_array = @queue.queue
@@ -33,23 +43,29 @@ RSpec.describe PriorityQueue do
     end
   end
 
-  describe "#empty?" do
-    it "returns truthy if contents are in queue" do
-      expect(@queue.empty?).to eq false
-    end
-  end
-
   describe "#remove" do
-    xit "returns the name of the minimum value from the queue." do
-      @queue.insert("Matthew", 18)
+    it "returns the name of the minimum value from the queue." do
+      @queue.insert("Matthew", 13)
       expect(@queue.remove).to eq "Matthew"
     end
 
 
     it "removes the value from the queue" do
-      @queue.insert("Matthew", 18)
+      @queue.insert("Matthew", 13)
       @queue.remove
       expect(@queue.size).to eq 1
+    end
+
+    it "maintains the min heap property" do
+      @queue.insert("Matthew", 13)
+      @queue.insert("Hermine", 8)
+      @queue.insert("Julia", 12)
+      @queue.insert("Lisa", 10)
+      expect(@queue.remove).to eq "Hermine"
+      expect(@queue.remove).to eq "Lisa"
+      expect(@queue.remove).to eq "Julia"
+      expect(@queue.remove).to eq "Matt"
+      expect(@queue.remove).to eq "Walter"
     end
   end
 end
