@@ -28,7 +28,7 @@ public class PriorityQueue {
     }
 
     public boolean isEmpty() { return size() == 0; }
-
+p
     public void insert(String name, int priority) {
         push(name, priority);
         int lastPosition = size() - 1;
