@@ -64,7 +64,7 @@ RSpec.describe PriorityQueue do
       expect(@queue.remove).to eq "Hermine"
       expect(@queue.remove).to eq "Lisa"
       expect(@queue.remove).to eq "Julia"
-      expect(@queue.remove).to eq "Matt"
+      expect(@queue.remove).to eq "Matthew"
       expect(@queue.remove).to eq "Walter"
     end
   end
