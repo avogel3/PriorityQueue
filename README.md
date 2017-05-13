@@ -1,5 +1,5 @@
-## Priority Queue
-###### A min heap backed Priority Queue implemented in Java.
+## Priority Queue 🛎
+###### A min heap backed Priority Queue implemented in Java and Ruby. Both tested using JUnit and Rspec, respectively.
 
 ### Java Instructions
 
@@ -13,7 +13,14 @@ cd java && javac PQReader.java
 java PQReader input.txt
 ```
 
-
 ### Ruby Instructions
 
-* WIP
+**Run**
+```
+cd ruby && ruby pq_test.rb
+```
+
+**Specs**
+```
+cd ruby && bundle exec rspec
+```
