@@ -17,7 +17,7 @@ java PQReader input.txt
 
 **Run**
 ```
-cd ruby && ruby pq_test.rb
+cd ruby && ruby pq_demo.rb
 ```
 
 **Specs**
