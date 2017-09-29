@@ -5,5 +5,4 @@ class Node
     @name = name
     @priority = priority
   end
-
 end

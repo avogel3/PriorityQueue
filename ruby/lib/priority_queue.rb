@@ -2,81 +2,81 @@ require_relative 'node'
 require 'pry'
 
 class PriorityQueue
+  extend Forwardable
   attr_reader :queue
 
   def initialize
-    @queue = Array.new
+    @queue = []
   end
 
-  def size
-    @queue.size
-  end
-
-  def empty?
-    size < 1
-  end
+  def_delegators :@queue, :empty?, :size
 
   def insert(name, priority)
-    @queue.push(Node.new(name, priority))
+    queue.push(Node.new(name, priority))
     sift_up
   end
 
   def remove
     last = size - 1
     swap(0, last)
-    min = @queue.pop.name
+    min = queue.pop.name
     sift_down
-    return min
+    min
   end
 
   private
+
   def sift_up
-    if size > 1
-      current = size - 1
-      begin
-        parent = (current - 1) / 2
-        if(@queue.at(parent).priority > @queue.at(current).priority)
-          swap(current, parent)
-        end
-        current = parent
-      end while(current > 0)
-    end
+    return unless size > 1
+    current = size - 1
+
+    begin
+      parent = (current - 1) / 2
+
+      if queue.at(parent).priority > queue.at(current).priority
+        swap(current, parent)
+      end
+
+      current = parent
+    end while(current > 0)
   end
 
   def sift_down
-    if(size > 1)
-      rootPosition = 0
-      endPosition = size - 1
-      begin
-        child = left_child(rootPosition)
-        swapPosition = rootPosition
+    return unless size > 1
+    root_position = 0
+    end_position = size - 1
 
-        if(@queue.at(swapPosition).priority > @queue.at(child).priority)
-          swapPosition = child
-        end
+    begin
+      child = left_child(root_position)
+      swap_position = root_position
 
-        if((right_child(rootPosition) <= endPosition) && @queue.at(swapPosition).priority > @queue.at(right_child(rootPosition)).priority)
-          swapPosition = right_child(rootPosition)
-        end
+      if queue.at(swap_position).priority > queue.at(child).priority
+        swap_position = child
+      end
 
-        return if swapPosition == rootPosition
-        swap(rootPosition, swapPosition)
-        rootPosition = swapPosition
-      end while(left_child(rootPosition) <= endPosition)
-    end
+      if right_child(root_position) <= end_position &&
+         queue.at(swap_position).priority > queue.at(right_child(root_position)).priority
+        swap_position = right_child(root_position)
+      end
+
+      return if swap_position == root_position
+
+      swap(root_position, swap_position)
+      root_position = swap_position
+    end while(left_child(root_position) <= end_position)
   end
 
-  def left_child node
-    return (node * 2) + 1
+  def left_child(node_position)
+    (node_position * 2) + 1
   end
 
-  def right_child node
-    return (node * 2) + 2
+  def right_child(node_position)
+    (node_position * 2) + 2
   end
 
   def swap(from_position, to_position)
-    temp = @queue[from_position]
-    @queue[from_position] = @queue[to_position]
-    @queue[to_position] = temp
+    temp = queue[from_position]
+    queue[from_position] = queue[to_position]
+    queue[to_position] = temp
   end
 end
